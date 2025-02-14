@@ -17,32 +17,32 @@ public class Main {
             System.out.print("Choose your 3rd service : ");
             String service3 = sc.nextLine();
 
-            ThirdClass tc = new ThirdClass();
+            Barbershop barbershop = new Barbershop();
 
             if (service1.equals("cut") && service2.equals("shave") && service3.equals("haircolor")) {
                 System.out.println("You chose: " + service1 + " " + service2 + " " + service3);
-                tc.getTotal(100, 150, 200);
+                barbershop.getTotal(100, 150, 200);
             } else if (service1.equals("cut") && service2.equals("") && service3.equals("haircolor")) {
                 System.out.println("You chose: " + service1 + " " + service3);
-                tc.getTotal(100, 0, 200);
+                barbershop.getTotal(100, 0, 200);
             } else if (service1.equals("cut") && service2.equals("shave") && service3.equals("")) {
                 System.out.println("You chose: " + service1 + " " + service2);
-                tc.getTotal(100, 150, 0);
+                barbershop.getTotal(100, 150, 0);
             } else if (service1.equals("") && service2.equals("shave") && service3.equals("haircolor")) {
                 System.out.println("You chose: " + service2 + " " + service3);
-                tc.getTotal(0, 150, 200);
+                barbershop.getTotal(0, 150, 200);
             } else if (service1.equals("") && service2.equals("") && service3.equals("haircolor")) {
                 System.out.println("You chose: " + service3);
-                tc.getTotal(0, 0, 200);
+                barbershop.getTotal(0, 0, 200);
             } else if (service1.equals("cut") && service2.equals("") && service3.equals("")) {
                 System.out.println("You chose: " + service2);
-                tc.getTotal(100, 0, 0);
+                barbershop.getTotal(100, 0, 0);
             } else if (service1.equals("") && service2.equals("shave") && service3.equals("")) {
                 System.out.println("You chose: " + service2);
-                tc.getTotal(0, 150, 0);
+                barbershop.getTotal(0, 150, 0);
             } else if (service1.equals("cut") && service2.equals("") && service3.equals("")) {
                 System.out.println("You chose: " + service1);
-                tc.getTotal(100, 0, 0);
+                barbershop.getTotal(100, 0, 0);
             } else {
                 System.out.println("No service/invalid service found.");
             }
