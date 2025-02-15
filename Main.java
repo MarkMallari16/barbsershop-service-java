@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
         while (true) {
-            Scanner sc = new Scanner(System.in);
-
             System.out.print("Choose your 1st service : ");
             String service1 = sc.nextLine();
 
